@@ -126,7 +126,7 @@ let
         )
       )));
 
-  emacsGit = mkGitEmacs "emacs-git" ../repos/emacs/emacs-master.json { withSQLite3 = true; withWebP = true; };
+  emacsGit = mkGitEmacs "emacs-git" ../repos/emacs/emacs-master.json { withSQLite3 = true; withWebP = true; withGTK3 = true; nativeComp = false; };
 
   emacsPgtk = mkGitEmacs "emacs-pgtk" ../repos/emacs/emacs-master.json { withSQLite3 = true; withWebP = true; withPgtk = true; };
 
